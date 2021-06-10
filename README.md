@@ -2,5 +2,6 @@
 
 # Live Demo
 
-https://shimele.github.io/Simple-Calculator-React/
+https://shimele.github.io/ReactJS-Calculator/
+
 # React-Calculator
