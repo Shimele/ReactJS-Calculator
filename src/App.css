@@ -9,7 +9,9 @@ body {
   padding: 1rem;
   background-color: #f38f86;
   color: white;
-  border: 5px solid #f19996;
+  border-top: 10px solid #f38b87;
+  border-left: 10px solid #f38b87;
+  border-bottom: 10px solid #f38b87;
 }
 .row {
   padding: 1rem;
@@ -18,15 +20,15 @@ button {
   margin-right: 0.7rem !important;
   background-color: white !important;
   color: #e88e86 !important;
-  border-left: 1px solid rgb(160, 149, 149) !important;
-  border-top: 1px solid rgb(160, 149, 149) !important;
+  border-left: 1px solid rgb(121, 113, 113) !important;
+  border-top: 1px solid rgb(121, 113, 113) !important;
 }
 .display-result {
   height: 3.5rem;
   background-color: #ebbbb9 !important;
   border-radius: 1rem !important;
-  border-top: 2px solid rgb(160, 149, 149) !important;
-  border-right: 2px solid rgb(160, 149, 149) !important;
+  border-top: 2px solid rgb(121, 113, 113) !important;
+  border-right: 2px solid rgb(121, 113, 113) !important;
 }
 .plus {
   background-color: #f38a52 !important;
