@@ -23,6 +23,9 @@ button {
   border-left: 1px solid rgb(121, 113, 113) !important;
   border-top: 1px solid rgb(121, 113, 113) !important;
 }
+.button:active {
+  transform: translateY(4px);
+}
 .display-result {
   height: 3.5rem;
   background-color: #ebbbb9 !important;
