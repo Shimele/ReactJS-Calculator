@@ -16,8 +16,7 @@ function App() {
   const calculate = (name) => {
     const newResult = result.join("");
     const newAnswer = eval(newResult);
-    setResult(newAnswer);
-    console.log(result);
+    setResult(newAnswer.toString());
   };
 
   const reset = () => {

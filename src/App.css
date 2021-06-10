@@ -5,22 +5,23 @@ body {
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 15px;
-  width: 30%;
+  width: 90%;
   padding: 1rem;
   background-color: #f38f86;
   color: white;
   border-top: 10px solid #f38b87;
-  border-left: 10px solid #f38b87;
+  border-left: 10px solid white;
   border-bottom: 10px solid #f38b87;
 }
 .row {
   padding: 1rem;
+  margin-left: 1rem;
 }
 button {
   margin-right: 0.7rem !important;
   background-color: white !important;
   color: #e88e86 !important;
-  border-left: 1px solid rgb(121, 113, 113) !important;
+  border-left: 1px solid white !important;
   border-top: 1px solid rgb(121, 113, 113) !important;
 }
 .button:active {
@@ -28,6 +29,7 @@ button {
 }
 .display-result {
   height: 3.5rem;
+  max-width: 90%;
   background-color: #ebbbb9 !important;
   border-radius: 1rem !important;
   border-top: 2px solid rgb(121, 113, 113) !important;
@@ -40,4 +42,21 @@ button {
 .cancel {
   background-color: #b0645e !important;
   color: white !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    width: 50%;
+  }
+  .row {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .App {
+    width: 30%;
+  }
+  .row {
+    margin-left: 0;
+  }
 }
