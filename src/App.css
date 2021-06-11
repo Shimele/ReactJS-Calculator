@@ -28,12 +28,13 @@ button {
   transform: translateY(4px);
 }
 .display-result {
-  height: 3.5rem;
+  height: 3.8rem;
   max-width: 90%;
   background-color: #ebbbb9 !important;
   border-radius: 1rem !important;
-  border-top: 2px solid rgb(121, 113, 113) !important;
-  border-right: 2px solid rgb(121, 113, 113) !important;
+  border: 5px solid #f38f86 !important;
+  font-size: larger !important;
+  color: rgb(34, 31, 31);
 }
 .plus {
   background-color: #f38a52 !important;

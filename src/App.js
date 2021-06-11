@@ -6,13 +6,18 @@ import Results from "./components/results";
 
 function App() {
   const [result, setResult] = useState("");
-  const [answer, setAnswer] = useState(0);
+  const [error, setError] = useState("");
 
   const handleClick = (name) => {
     setResult((prevResult) => [...prevResult, name]);
-    console.log(result);
   };
 
+  const errorMessage = () => {
+    const lastElement = result.pop();
+    if (isNaN(lastElement)) {
+      setError("error");
+    }
+  };
   const calculate = (name) => {
     const newResult = result.join("");
     const newAnswer = eval(newResult);
@@ -21,7 +26,6 @@ function App() {
 
   const reset = () => {
     setResult("");
-    setAnswer(0);
   };
   const backSpace = () => {
     const newresult = [...result];
@@ -32,7 +36,8 @@ function App() {
   return (
     <div className="App">
       <hi>A Simple Calculator</hi>
-      <Results result={result} answer={answer} />
+      <h1>{error}</h1>
+      <Results result={result} />
       <UI
         onClick={handleClick}
         calculate={calculate}
